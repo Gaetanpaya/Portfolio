@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon CV</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eeeeee; /* fond gris clair */
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .btn-download {
+      background-color: #333;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-download:hover {
+      background-color: #555;
+    }
+
+    .cv-image {
+      margin-top: 30px;
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Titre -->
+    <h1>Mon CV</h1>
+
+    <!-- Bouton Télécharger en haut -->
+    <a class="btn-download" href="cv.zip" download>Télécharger le CV (.zip)</a>
+
+    <!-- Image du CV en dessous -->
+    <img class="cv-image" src="cv.png" alt="CV de Nom Prénom">
+  </div>
+</body>
+</html>
